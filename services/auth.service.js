@@ -1,4 +1,4 @@
-const { generateToken } = require("../helpers/jwt.helper");
+const { generateToken } = require("../api/helpers/jwt.helper");
 let _userService = null;
 
 class AuthService {

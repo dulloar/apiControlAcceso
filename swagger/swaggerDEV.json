@@ -1,0 +1,104 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Backend de aplicacion de formularios",
+    "version": "0.1",
+    "tittle": "Aplicacion de formularios",
+    "contact": {
+      "email": "dulloa@hkc.mx"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/v1/api-hkc",
+  "tags": [
+    {
+      "name": "evens",
+      "description": "ABC de formularios"
+    }
+  ],
+  "schemes": ["http", "https"],
+  "paths": {
+    "/events": {
+      "get": {
+        "tags": ["events"],
+        "summary": "Obtiene todos los formularios",
+        "description": "Obtiene todos los formulatios que han sido creados",
+        "produces": ["applicatino/json"],
+        "parameters": [
+          {
+            "name": "originId",
+            "type": "number",
+            "in": "query",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "events": [
+              {
+                "id": "1",
+                "name": "incidencia92"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "/events/{id}": {
+      "get": {
+        "tags": ["Users"],
+        "summary": "buscar un solo usuario por id",
+        "description": "buscar un usuario apartir de su id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "description": "Event Id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/definitions/Event"
+          },
+          "400": {
+            "description": "Invalid tag value"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Events": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "originId":{
+            "type":"string"
+        },
+        "start":{
+            "type":"string"
+        },
+        "end":{
+            "type":"string"
+        },
+        "lat":{
+            "type":"float"
+        },
+        "lon":{
+            "type":"float"
+        },
+        "form_id":{
+            "type":"number"
+        }
+      }
+    }
+  }
+}

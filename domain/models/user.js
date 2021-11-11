@@ -1,10 +1,11 @@
-class User {
-    id = 0;
+class User{
+  id = 0;
+  created_at = null;
+  updated_at = null;
     name = null;
     email = null;
     password = null;
-    created_at = null;
-    updated_at = null;
+    active = 0;
   }
 
   module.exports = User;

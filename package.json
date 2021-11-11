@@ -20,7 +20,8 @@
     "jsonwebtoken": "^8.5.1",
     "memory-cache": "^0.2.0",
     "mysql2": "^2.3.3-rc.0",
-    "sequelize": "^6.9.0"
+    "sequelize": "^6.9.0",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "chalk": "^4.1.2",

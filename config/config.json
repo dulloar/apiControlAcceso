@@ -19,7 +19,8 @@
       "createdBy": "created_by",
       "updatedBy": "updated_by"
       
-  },
+  }
+},
   "test": {
     "username": "root",
     "password": null,

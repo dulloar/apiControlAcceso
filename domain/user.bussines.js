@@ -8,3 +8,5 @@ class UserBussines extends BaseBusiness {
     }
     
 }
+
+module.exports = UserBussines;
