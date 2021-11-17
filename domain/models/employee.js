@@ -5,5 +5,7 @@ class Employee{
     name = null;
     lastName = null;
     secondLastName = null;
+    created_at = new Date();
+    updated_at = new Date();
     active = 0;
 }

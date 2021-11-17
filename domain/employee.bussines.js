@@ -1,5 +1,5 @@
 const BaseBusiness = require("./base.bussines");
-const Employee = require("./models/user");
+const Employee = require("./models/employee");
 
 class EmployeeBussines extends BaseBusiness {
 
